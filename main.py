@@ -25,7 +25,9 @@ cpox = random.randint(1,3)
 smoking = random.randint(1,4)
 addictsm = random.randint(21,100)
 car = 1
-immor = random.randint(1,10)
+immor = random.randint(1,5)
+deathcause = random.randint(1,8)
+immdeathage = random.randint(250,1000)
 
 if profession == 1:
     job = "Rapper"
@@ -132,9 +134,9 @@ elif alcoholone == 4:
 else:
     atest = "null"
 
-print("Echo\nVersion 1.10.7\nIf it says 'Wealth not defined',\njust run again")
+print("Echo\nVersion 1.10.9\nIf it says 'Wealth not defined',\njust run again")
 time.sleep(1)
-for x in range(2001):
+for x in range(1001):
     print("Echo is " , x , " years old")
     age = x
     nwifeage = x + 5
@@ -196,7 +198,7 @@ for x in range(2001):
                 print("|               |")
                 print("|_______________|")
                 print("Echo discovered immortality")
-                deathage = 1000000
+                deathage = 1000
             else:
                 pass
     else:
@@ -208,7 +210,6 @@ for x in range(2001):
         pass
         time.sleep(1)
     if age == deathage:
-        deathcause = random.randint(1,8)
         if deathcause == 1:
             print(" _______________ ")
             print("|               |")
@@ -291,6 +292,18 @@ for x in range(2001):
             sys.exit("Echo comitted SHOOT SHOOT")
         else:
             pass
+    else:
+        pass
+    if age == immdeathage:
+        print(" _______________ ")
+        print("|               |")
+        print("|      Echo     |")
+        print("|    Age: ",age,"|")
+        print("|               |")
+        print("|               |")
+        print("|               |")
+        print("|_______________|")
+        sys.exit("Echo got tired of being immortal and\nkilled himself")
     else:
         pass
     if age == midlc:
