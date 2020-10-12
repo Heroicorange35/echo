@@ -31,6 +31,24 @@ immdeathage = random.randint(250,1000)
 kidnapped = random.randint(1,5)
 paid = random.randint(1,3)
 kidnppdage = random.randint(1,17)
+criminal = random.randint(1,6)
+crimnlactvty = random.randint(18,40)
+criminalact = random.randint(1,4)
+
+if criminalact == 1:
+    cracty = "Robbed"
+    prisonyrs = 10
+elif criminalact == 2:
+    cracty = "Murdered"
+    prisonyrs = 30
+elif criminalact == 3:
+    cracty = "Crashed a car into"
+    prisonyrs = 50
+elif criminalact == 4:
+    cracty = "Ate a burger with"
+    prisonyrs = 1000
+else:
+    cracty = "null"
 
 if profession == 1:
     job = "Rapper"
@@ -137,7 +155,25 @@ elif alcoholone == 4:
 else:
     atest = "null"
 
-print("Echo\nVersion 1.11.0\nIf it says 'Wealth not defined',\njust run again")
+if wealth == "Homeless":
+    newcriminal = criminal + 2
+elif wealth == "Poor":
+    newcriminal = criminal + 1
+elif wealth == "Loaded":
+    newcriminal = criminal - 1
+else:
+    newcriminal = criminal
+if looks == "Ugly":
+    offcriminal = newcriminal + 1
+elif looks == "Revloting":
+    offcriminal = newcriminal + 2
+elif looks == "Beautiful":
+    offcriminal = newcriminal - 2
+else:
+    offcriminal = newcriminal
+    
+
+print("Echo\nVersion 1.12.3\nIf it says 'Wealth not defined',\njust run again")
 time.sleep(1)
 for x in range(1001):
     print("Echo is " , x , " years old")
@@ -493,3 +529,17 @@ for x in range(1001):
             pass
     else:
         pass
+    if age == crimnlactvty:
+        if offcriminal >= 5:
+            print("Echo has " , cracty , " someone")
+            time.sleep(1)
+            print("Echo has to serve " , prisonyrs , " years in prison")
+        else:
+            pass
+    else:
+        pass
+    if age == crimnlactvty + prisonyrs:
+        print("Echo has now served " , prisonyrs , " years in prison.")
+    else:
+        pass
+    
