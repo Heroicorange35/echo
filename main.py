@@ -28,6 +28,9 @@ car = 1
 immor = random.randint(1,5)
 deathcause = random.randint(1,8)
 immdeathage = random.randint(250,1000)
+kidnapped = random.randint(1,5)
+paid = random.randint(1,3)
+kidnppdage = random.randint(1,17)
 
 if profession == 1:
     job = "Rapper"
@@ -134,7 +137,7 @@ elif alcoholone == 4:
 else:
     atest = "null"
 
-print("Echo\nVersion 1.10.9\nIf it says 'Wealth not defined',\njust run again")
+print("Echo\nVersion 1.11.0\nIf it says 'Wealth not defined',\njust run again")
 time.sleep(1)
 for x in range(1001):
     print("Echo is " , x , " years old")
@@ -399,6 +402,93 @@ for x in range(1001):
     if age == addictsm:
         if smoking == 1:
             print("Echo is now addicted to cigarettes")
+        else:
+            pass
+    else:
+        pass
+    if age == kidnppdage:
+        if kidnapped == 1:
+            print("Echo has been kidnapped")
+            time.sleep(1)
+            print("The ransom is $1,000")
+            if wealth == "Homeless":
+                print(" _______________ ")
+                print("|               |")
+                print("|      Echo     |")
+                print("|    Age: ",age,"   |")
+                print("|               |")
+                print("|               |")
+                print("|               |")
+                print("|_______________|")
+                print("Your parents couldn't pay the ransom")
+                sys.exit("You were killed by your captors")
+            elif wealth == "Poor":
+                print(" _______________ ")
+                print("|               |")
+                print("|      Echo     |")
+                print("|    Age: ",age,"   |")
+                print("|               |")
+                print("|               |")
+                print("|               |")
+                print("|_______________|")
+                print("Your parents couldn't pay the ransom")
+                sys.exit("You were killed by your captors")
+            elif wealth == "Average":
+                if paid == 1:
+                    print(" _______________ ")
+                    print("|               |")
+                    print("|      Echo     |")
+                    print("|    Age: ",age,"   |")
+                    print("|               |")
+                    print("|               |")
+                    print("|               |")
+                    print("|_______________|")
+                    print("Your parents wouldn't pay the ransom")
+                    sys.exit("You were killed by your captors")
+                else:
+                    print("Your parents paid the ransom")
+            elif wealth == "Anti-Vax":
+                if paid == 1:
+                    print(" _______________ ")
+                    print("|               |")
+                    print("|      Echo     |")
+                    print("|    Age: ",age,"   |")
+                    print("|               |")
+                    print("|               |")
+                    print("|               |")
+                    print("|_______________|")
+                    print("Your parents wouldn't pay the ransom")
+                    sys.exit("You were killed by your captors")
+                else:
+                    print("Your parents paid the ransom")
+            elif wealth == "Wealthy":
+                if paid == 1:
+                    print("Your parents paid the ransom")
+                else:
+                    print(" _______________ ")
+                    print("|               |")
+                    print("|      Echo     |")
+                    print("|    Age: ",age,"   |")
+                    print("|               |")
+                    print("|               |")
+                    print("|               |")
+                    print("|_______________|")
+                    print("Your parents wouldn't pay the ransom")
+                    sys.exit("You were killed by your captors")
+            elif wealth == "Loaded":
+                if paid == 1:
+                    print("Your parents paid the ransom")
+                else:
+                    print(" _______________ ")
+                    print("|               |")
+                    print("|      Echo     |")
+                    print("|    Age: ",age,"   |")
+                    print("|               |")
+                    print("|               |")
+                    print("|               |")
+                    print("|_______________|")
+                    print("Your parents wouldn't pay the ransom")
+                    sys.exit("You were killed by your captors")
         else:
             pass
     else:
